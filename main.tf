@@ -31,7 +31,11 @@ resource "github_repository" "repos" {
   license_template = each.value.license_template
   gitignore_template = each.value.gitignore_template != null ? each.value.gitignore_template : (
     each.value.language == "scala" ? "Scala" : (
-      each.value.language == "kotlin" ? "Kotlin" : "Java"
+      each.value.language == "kotlin" ? "Kotlin" : (
+        each.value.language == "java" ? "Java" : (
+          each.value.language == "lua" ? "Lua" : null
+        )
+      )
     )
   )
 }
@@ -103,7 +107,7 @@ resource "github_actions_secret" "secrets" {
 
 # 3. Add GitHub Actions CI/CD Deployment Workflow File to each repository (Tag-driven release)
 resource "github_repository_file" "workflow" {
-  for_each = var.repositories
+  for_each = { for k, v in var.repositories : k => v if v.build_tool != "none" }
 
   repository = github_repository.repos[each.key].name
   branch     = each.value.default_branch
@@ -124,7 +128,7 @@ resource "github_repository_file" "workflow" {
 
 # 4. Add GitHub Actions Standard CI Workflow File to each repository (PR and branch verification)
 resource "github_repository_file" "ci_workflow" {
-  for_each = var.repositories
+  for_each = { for k, v in var.repositories : k => v if v.build_tool != "none" }
 
   repository = github_repository.repos[each.key].name
   branch     = each.value.default_branch

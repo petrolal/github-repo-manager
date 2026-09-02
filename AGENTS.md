@@ -1,7 +1,7 @@
 <!-- bmad:context -->
 <!-- Verified 2026-08-17 against initial-commit. Managed by bmad-project-context; edits inside this block are replaced on refresh. Keep anything you want preserved outside the markers. -->
 
-## github-publish-maven
+## github-repo-manager
 
 Terraform automation project that provisions and configures GitHub repositories with automated CI/CD pipelines (Gradle, Maven, SBT) for Sonatype / Maven Central publishing and GitHub Releases on tag push (`v*`).
 

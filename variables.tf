@@ -90,14 +90,12 @@ variable "repositories" {
       topics           = ["scala", "sbt", "graalvm", "native-image", "dotfiles", "maven-central"]
     },
     "cumulus.nvim" = {
-      description      = "Polyglot JVM intelligence engine for Neovim built in Scala 3 with GraalVM Native Image"
-      language         = "scala"
-      build_tool       = "sbt"
-      default_branch   = "main"
-      jdk_version      = "21"
-      jdk_distribution = "graalvm-community"
-      visibility       = "public"
-      topics           = ["scala", "sbt", "neovim", "graalvm", "native-image", "library", "maven-central"]
+      description    = "Neovim configuration and plugins"
+      language       = "lua"
+      build_tool     = "none"
+      default_branch = "main"
+      visibility     = "public"
+      topics         = ["neovim", "lua", "dotfiles", "plugin"]
     },
     "ahun-duty-service" = {
       description      = "Duty management microservice for Casa Ahun in Kotlin / Spring Boot"
@@ -121,17 +119,4 @@ variable "repositories" {
     }
   }
 
-  validation {
-    condition = alltrue([
-      for k, repo in var.repositories : contains(["gradle", "maven", "sbt"], repo.build_tool)
-    ])
-    error_message = "Supported build_tool values are: 'gradle', 'maven', 'sbt'."
-  }
-
-  validation {
-    condition = alltrue([
-      for k, repo in var.repositories : contains(["kotlin", "java", "scala"], repo.language)
-    ])
-    error_message = "Supported language values are: 'kotlin', 'java', 'scala'."
-  }
 }

@@ -1,4 +1,4 @@
-# GitHub Repositories for Maven Central Publishing (Terraform)
+# GitHub Repository Manager (Terraform)
 
 This Terraform project automates the creation and configuration of GitHub repositories with everything needed to build, test, sign, publish to **Maven Central (Sonatype Portal)**, and create **GitHub Releases** on tag pushes.
 
