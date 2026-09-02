@@ -28,8 +28,8 @@ repositories = {
     topics           = ["kotlin", "gradle", "library", "maven-central"]
   },
 
-  # Scala Library using SBT (following cumulus.dotfiles flow)
-  "cumulus-core" = {
+  # Scala Library using SBT (following tetravim.dotfiles flow)
+  "tetravim-core" = {
     description      = "Scala core library published to Maven Central"
     language         = "scala"
     build_tool       = "sbt"

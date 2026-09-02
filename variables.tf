@@ -89,7 +89,7 @@ variable "repositories" {
       visibility       = "public"
       topics           = ["scala", "sbt", "graalvm", "native-image", "dotfiles", "maven-central"]
     },
-    "cumulus.nvim" = {
+    "tetravim.nvim" = {
       description    = "Neovim configuration and plugins"
       language       = "lua"
       build_tool     = "none"

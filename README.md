@@ -5,7 +5,7 @@ This Terraform project automates the creation and configuration of GitHub reposi
 It supports:
 - **Build Tools**: Gradle, SBT, and Maven.
 - **Languages**: Kotlin, Java, and Scala.
-- **Publish Flow**: Two-stage CI/CD pipeline following the flow from `~/cumulus.dotfiles` and `commons-web`.
+- **Publish Flow**: Two-stage CI/CD pipeline following the flow from `~/tetravim.dotfiles` and `commons-web`.
 - **Automatic GPG Key Retrieval**: Automatically extracts your ASCII-armored private key from your local GPG keyring at runtime without requiring manual copy-pasting.
 
 ---
@@ -25,7 +25,7 @@ It supports:
 3. **Tailored CI/CD Workflows (`.github/workflows/deploy.yml`)**:
    Automatically commits the appropriate GitHub Actions workflow file according to the chosen `build_tool`:
    - **`gradle`**: Configured with `gradle/actions/setup-gradle@v3`, `./gradlew check build`, automated GPG key decoding, `./gradlew publishAndReleaseToMavenCentral`, and GitHub Release creation via `softprops/action-gh-release@v2`.
-   - **`sbt`**: Follows the `cumulus.dotfiles` release flow (`sbt/setup-sbt@v1`, caching, `sbt compile test`, `sbt ci-release`, and GitHub Release creation).
+   - **`sbt`**: Follows the `tetravim.dotfiles` release flow (`sbt/setup-sbt@v1`, caching, `sbt compile test`, `sbt ci-release`, and GitHub Release creation).
    - **`maven`**: Configured with `mvn clean verify`, GPG signing import, `mvn clean deploy`, and GitHub Release creation.
 
 4. **Multi-Stage Pipeline**:

@@ -12,16 +12,6 @@ import {
 }
 
 import {
-  to = github_repository.repos["cumulus.dotfiles"]
-  id = "cumulus.dotfiles"
-}
-
-import {
-  to = github_repository.repos["cumulus.nvim"]
-  id = "cumulus.nvim"
-}
-
-import {
   to = github_repository.repos["ahun-duty-service"]
   id = "ahun-duty-service"
 }
@@ -29,4 +19,24 @@ import {
 import {
   to = github_repository.repos["ahun-members-service"]
   id = "ahun-members-service"
+}
+
+import {
+  to = github_repository.repos["cumulus.dotfiles"]
+  id = "cumulus.dotfiles"
+}
+
+import {
+  to = github_repository.repos["github-repo-manager"]
+  id = "github-repo-manager"
+}
+
+import {
+  to = github_repository.repos["petrolal"]
+  id = "petrolal"
+}
+
+import {
+  to = github_repository.repos["ahun-cloud-env"]
+  id = "ahun-cloud-env"
 }
