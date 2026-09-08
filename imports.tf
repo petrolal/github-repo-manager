@@ -22,8 +22,8 @@ import {
 }
 
 import {
-  to = github_repository.repos["cumulus.dotfiles"]
-  id = "cumulus.dotfiles"
+  to = github_repository.repos["polyomino.dotfiles"]
+  id = "polyomino.dotfiles"
 }
 
 import {

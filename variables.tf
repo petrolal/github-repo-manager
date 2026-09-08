@@ -79,7 +79,7 @@ variable "repositories" {
       visibility       = "public"
       topics           = ["kotlin", "gradle", "spring-boot", "telegram-bot", "library", "maven-central"]
     },
-    "cumulus.dotfiles" = {
+    "polyomino.dotfiles" = {
       description      = "Sway/Wayland desktop configuration and system manager built in Scala 3 with GraalVM Native Image"
       language         = "scala"
       build_tool       = "sbt"
@@ -116,6 +116,37 @@ variable "repositories" {
       jdk_distribution = "corretto"
       visibility       = "public"
       topics           = ["java", "gradle", "spring-boot", "microservice", "maven-central"]
+    },
+    "landing-page-thymeleaf-template-first" = {
+      description      = "Gradle template applied by JBang and published via Maven to GitHub for Spring Boot and Thymeleaf projects"
+      language         = "java"
+      build_tool       = "gradle"
+      default_branch   = "main"
+      jdk_version      = "21"
+      jdk_distribution = "corretto"
+      visibility       = "public"
+      topics           = ["java", "gradle", "template", "jbang", "spring-boot", "thymeleaf", "maven-central"]
+    },
+    "github-repo-manager" = {
+      description    = "A Terraform IaC to implement my github repositories"
+      language       = "hcl"
+      build_tool     = "none"
+      default_branch = "main"
+      visibility     = "public"
+    },
+    "petrolal" = {
+      description    = "Config files for my GitHub profile."
+      language       = "markdown"
+      build_tool     = "none"
+      default_branch = "main"
+      visibility     = "public"
+    },
+    "ahun-cloud-env" = {
+      description    = "Iac with Terraform for casa_ahun GCP account"
+      language       = "hcl"
+      build_tool     = "none"
+      default_branch = "main"
+      visibility     = "public"
     }
   }
 
