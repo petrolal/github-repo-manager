@@ -92,3 +92,69 @@ moved {
   from = github_actions_secret.secrets["cumulus.dotfiles/SONATYPE_USERNAME"]
   to   = github_actions_secret.secrets["polyomino.dotfiles/SONATYPE_USERNAME"]
 }
+
+moved {
+  from = github_repository.repos["landing-page-thymeleaf-template-first"]
+  to   = github_repository.repos["landing-page-thymeleaf-template-software-boilerplate"]
+}
+
+moved {
+  from = github_repository_vulnerability_alerts.alerts["landing-page-thymeleaf-template-first"]
+  to   = github_repository_vulnerability_alerts.alerts["landing-page-thymeleaf-template-software-boilerplate"]
+}
+
+moved {
+  from = github_repository_file.workflow["landing-page-thymeleaf-template-first"]
+  to   = github_repository_file.workflow["landing-page-thymeleaf-template-software-boilerplate"]
+}
+
+moved {
+  from = github_repository_file.ci_workflow["landing-page-thymeleaf-template-first"]
+  to   = github_repository_file.ci_workflow["landing-page-thymeleaf-template-software-boilerplate"]
+}
+
+moved {
+  from = github_repository_ruleset.protect_tags["landing-page-thymeleaf-template-first"]
+  to   = github_repository_ruleset.protect_tags["landing-page-thymeleaf-template-software-boilerplate"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/MAVEN_CENTRAL_PASSWORD"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/MAVEN_CENTRAL_PASSWORD"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/MAVEN_CENTRAL_USERNAME"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/MAVEN_CENTRAL_USERNAME"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/PGP_PASSPHRASE"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/PGP_PASSPHRASE"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/PGP_SECRET"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/PGP_SECRET"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/SIGNING_KEY"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/SIGNING_KEY"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/SIGNING_PASSWORD"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/SIGNING_PASSWORD"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/SONATYPE_PASSWORD"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/SONATYPE_PASSWORD"]
+}
+
+moved {
+  from = github_actions_secret.secrets["landing-page-thymeleaf-template-first/SONATYPE_USERNAME"]
+  to   = github_actions_secret.secrets["landing-page-thymeleaf-template-software-boilerplate/SONATYPE_USERNAME"]
+}
+

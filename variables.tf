@@ -117,8 +117,18 @@ variable "repositories" {
       visibility       = "public"
       topics           = ["java", "gradle", "spring-boot", "microservice", "maven-central"]
     },
-    "landing-page-thymeleaf-template-first" = {
-      description      = "Gradle template applied by JBang and published via Maven to GitHub for Spring Boot and Thymeleaf projects"
+    "landing-page-thymeleaf-template-software-boilerplate" = {
+      description      = "landing-page-thymeleaf-template-software-boilerplate"
+      language         = "java"
+      build_tool       = "gradle"
+      default_branch   = "main"
+      jdk_version      = "21"
+      jdk_distribution = "corretto"
+      visibility       = "public"
+      topics           = ["java", "gradle", "template", "jbang", "spring-boot", "thymeleaf", "maven-central"]
+    },
+    "landing-page-thymeleaf-template-comercial" = {
+      description      = "landing-page-thymeleaf-template-comercial"
       language         = "java"
       build_tool       = "gradle"
       default_branch   = "main"
