@@ -86,6 +86,7 @@ variable "repositories" {
       default_branch   = "master"
       jdk_version      = "21"
       jdk_distribution = "graalvm-community"
+      license_template = "gpl-3.0"
       visibility       = "public"
       topics           = ["scala", "sbt", "graalvm", "native-image", "dotfiles", "maven-central"]
     },
