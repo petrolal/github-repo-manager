@@ -90,12 +90,13 @@ variable "repositories" {
       topics           = ["scala", "sbt", "graalvm", "native-image", "dotfiles", "maven-central"]
     },
     "tetravim.nvim" = {
-      description    = "Neovim configuration and plugins"
-      language       = "lua"
-      build_tool     = "none"
-      default_branch = "main"
-      visibility     = "public"
-      topics         = ["neovim", "lua", "dotfiles", "plugin"]
+      description      = "Neovim configuration and plugins"
+      language         = "lua"
+      build_tool       = "none"
+      default_branch   = "main"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      topics           = ["neovim", "lua", "dotfiles", "plugin"]
     },
     "ahun-duty-service" = {
       description      = "Duty management microservice for Casa Ahun in Kotlin / Spring Boot"
