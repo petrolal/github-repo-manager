@@ -159,6 +159,24 @@ variable "repositories" {
       build_tool     = "none"
       default_branch = "main"
       visibility     = "public"
+    },
+    "null-sector-plasma" = {
+      description      = "A cyberpunk and monochromatic themed desktop rice and configuration for KDE Plasma"
+      language         = "qml"
+      build_tool       = "none"
+      default_branch   = "main"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      topics           = ["kde", "kde-plasma", "plasma", "rice", "cyberpunk", "monochrome", "dotfiles", "theme"]
+    },
+    "hellmacs" = {
+      description      = "HELLMACS: Forged in bytecode, tempered in hellfire. An unholy, brutally optimized Emacs distribution engineered to subjugate the JVM. Rip and tear through monolithic runtimes."
+      language         = "elisp"
+      build_tool       = "none"
+      default_branch   = "main"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      topics           = ["emacs", "emacs-distribution", "evil-mode", "jvm", "java", "clojure", "kotlin", "scala", "dotfiles"]
     }
   }
 
