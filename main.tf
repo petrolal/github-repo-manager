@@ -27,7 +27,7 @@ resource "github_repository" "repos" {
   has_projects = false
   has_wiki     = each.value.has_wiki
 
-  auto_init        = true
+  auto_init        = each.value.auto_init
   license_template = each.value.license_template
   gitignore_template = each.value.gitignore_template != null ? each.value.gitignore_template : (
     each.value.language == "scala" ? "Scala" : (

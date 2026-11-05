@@ -57,6 +57,7 @@ variable "repositories" {
     has_wiki           = optional(bool, false)
     license_template   = optional(string, "apache-2.0")
     gitignore_template = optional(string, null)
+    auto_init          = optional(bool, true) # false when pushing an existing local history
   }))
   default = {
     "commons-web" = {
@@ -137,6 +138,16 @@ variable "repositories" {
       license_template = "gpl-3.0"
       visibility       = "public"
       topics           = []
+    },
+    "inferna-dotfiles" = {
+      description      = "Pebble Shell & Recessed Windows, engineered natively for NixOS: Hyprland + Quickshell desktop backed by a declarative NixOS Flake."
+      language         = "nix"
+      build_tool       = "none"
+      default_branch   = "main"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      auto_init        = false
+      topics           = ["nixos", "nix-flake", "hyprland", "quickshell", "wayland", "rice", "dotfiles"]
     }
   }
 
