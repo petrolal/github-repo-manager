@@ -42,11 +42,6 @@ import {
 }
 
 import {
-  to = github_repository.repos["dotfiles"]
-  id = "dotfiles"
-}
-
-import {
   to = github_repository.repos["inferna-core"]
   id = "inferna-core"
 }

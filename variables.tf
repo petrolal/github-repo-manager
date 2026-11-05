@@ -98,16 +98,6 @@ variable "repositories" {
       visibility       = "public"
       topics           = ["java", "gradle", "spring-boot", "microservice", "maven-central"]
     },
-    "landing-page-thymeleaf-template-software-boilerplate" = {
-      description      = "landing-page-thymeleaf-template-software-boilerplate"
-      language         = "java"
-      build_tool       = "gradle"
-      default_branch   = "main"
-      jdk_version      = "21"
-      jdk_distribution = "corretto"
-      visibility       = "public"
-      topics           = ["java", "gradle", "template", "jbang", "spring-boot", "thymeleaf", "maven-central"]
-    },
     "github-repo-manager" = {
       description    = "A Terraform IaC to implement my github repositories"
       language       = "hcl"
@@ -138,16 +128,6 @@ variable "repositories" {
       visibility       = "public"
       has_wiki         = true
       topics           = ["emacs", "emacs-distribution", "evil-mode", "jvm", "java", "clojure", "kotlin", "scala", "dotfiles"]
-    },
-    "dotfiles" = {
-      description      = "My XFCE dotfiles for NixOS"
-      language         = "nix"
-      build_tool       = "none"
-      default_branch   = "main"
-      license_template = "gpl-3.0"
-      visibility       = "public"
-      has_wiki         = true
-      topics           = []
     },
     "inferna-core" = {
       description      = "Biopunk developer environment and Spring Framework tooling core for the IntelliJ Platform."
