@@ -79,18 +79,7 @@ variable "repositories" {
       visibility       = "public"
       topics           = ["kotlin", "gradle", "spring-boot", "telegram-bot", "library", "maven-central"]
     },
-    "polyomino.dotfiles" = {
-      description      = "Sway/Wayland desktop configuration and system manager built in Scala 3 with GraalVM Native Image"
-      language         = "scala"
-      build_tool       = "sbt"
-      default_branch   = "master"
-      jdk_version      = "21"
-      jdk_distribution = "graalvm-community"
-      license_template = "gpl-3.0"
-      visibility       = "public"
-      topics           = ["scala", "sbt", "graalvm", "native-image", "dotfiles", "maven-central"]
-    },
-    "tetravim.nvim" = {
+    "TetraVim" = {
       description      = "Neovim configuration and plugins"
       language         = "lua"
       build_tool       = "none"
@@ -98,16 +87,6 @@ variable "repositories" {
       license_template = "gpl-3.0"
       visibility       = "public"
       topics           = ["neovim", "lua", "dotfiles", "plugin"]
-    },
-    "ahun-duty-service" = {
-      description      = "Duty management microservice for Casa Ahun in Kotlin / Spring Boot"
-      language         = "kotlin"
-      build_tool       = "gradle"
-      default_branch   = "master"
-      jdk_version      = "21"
-      jdk_distribution = "corretto"
-      visibility       = "public"
-      topics           = ["kotlin", "gradle", "spring-boot", "microservice", "maven-central"]
     },
     "ahun-members-service" = {
       description      = "Birthday reminder and members management service for Casa Ahun in Java / Spring Boot"
@@ -121,16 +100,6 @@ variable "repositories" {
     },
     "landing-page-thymeleaf-template-software-boilerplate" = {
       description      = "landing-page-thymeleaf-template-software-boilerplate"
-      language         = "java"
-      build_tool       = "gradle"
-      default_branch   = "main"
-      jdk_version      = "21"
-      jdk_distribution = "corretto"
-      visibility       = "public"
-      topics           = ["java", "gradle", "template", "jbang", "spring-boot", "thymeleaf", "maven-central"]
-    },
-    "landing-page-thymeleaf-template-comercial" = {
-      description      = "landing-page-thymeleaf-template-comercial"
       language         = "java"
       build_tool       = "gradle"
       default_branch   = "main"
@@ -160,23 +129,34 @@ variable "repositories" {
       default_branch = "main"
       visibility     = "public"
     },
-    "null-sector-plasma" = {
-      description      = "A cyberpunk and monochromatic themed desktop rice and configuration for KDE Plasma"
-      language         = "qml"
-      build_tool       = "none"
-      default_branch   = "main"
-      license_template = "gpl-3.0"
-      visibility       = "public"
-      topics           = ["kde", "kde-plasma", "plasma", "rice", "cyberpunk", "monochrome", "dotfiles", "theme"]
-    },
-    "hellmacs" = {
+    "hell-emacs" = {
       description      = "HELLMACS: Forged in bytecode, tempered in hellfire. An unholy, brutally optimized Emacs distribution engineered to subjugate the JVM. Rip and tear through monolithic runtimes."
       language         = "elisp"
       build_tool       = "none"
       default_branch   = "main"
       license_template = "gpl-3.0"
       visibility       = "public"
+      has_wiki         = true
       topics           = ["emacs", "emacs-distribution", "evil-mode", "jvm", "java", "clojure", "kotlin", "scala", "dotfiles"]
+    },
+    "dotfiles" = {
+      description      = "My XFCE dotfiles for NixOS"
+      language         = "nix"
+      build_tool       = "none"
+      default_branch   = "main"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      has_wiki         = true
+      topics           = []
+    },
+    "inferna-core" = {
+      description      = "Biopunk developer environment and Spring Framework tooling core for the IntelliJ Platform."
+      language         = "kotlin"
+      build_tool       = "none"
+      default_branch   = "master"
+      license_template = "gpl-3.0"
+      visibility       = "public"
+      topics           = []
     }
   }
 

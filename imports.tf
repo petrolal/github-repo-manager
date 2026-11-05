@@ -12,18 +12,8 @@ import {
 }
 
 import {
-  to = github_repository.repos["ahun-duty-service"]
-  id = "ahun-duty-service"
-}
-
-import {
   to = github_repository.repos["ahun-members-service"]
   id = "ahun-members-service"
-}
-
-import {
-  to = github_repository.repos["polyomino.dotfiles"]
-  id = "polyomino.dotfiles"
 }
 
 import {
@@ -39,4 +29,24 @@ import {
 import {
   to = github_repository.repos["ahun-cloud-env"]
   id = "ahun-cloud-env"
+}
+
+import {
+  to = github_repository.repos["TetraVim"]
+  id = "TetraVim"
+}
+
+import {
+  to = github_repository.repos["hell-emacs"]
+  id = "hell-emacs"
+}
+
+import {
+  to = github_repository.repos["dotfiles"]
+  id = "dotfiles"
+}
+
+import {
+  to = github_repository.repos["inferna-core"]
+  id = "inferna-core"
 }
